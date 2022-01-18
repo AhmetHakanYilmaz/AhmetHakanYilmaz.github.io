@@ -154,7 +154,7 @@
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                <h2 class="text-white mb-5">You can contact me from here!</h2>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
                 <!-- * * * * * * * * * * * * * * *-->
@@ -162,39 +162,24 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <!-- Email address input-->
-                    <div class="input-group-newsletter ">
-                        <div class="form-group">
+                <div class = "contact">
 
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                       <!-- <div class="row"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address...(optional)" aria-label="Enter email address..."  /></div>-->
-                        <div class="form-group">
 
-                            <textarea class="form-control" id="textToSubmit" rows="5" placeholder="Anything..." ></textarea>
-                        </div>
-                       <!-- <div class="form-group"><input class="form-text" id="text" rows="3" type="text" placeholder="Anything..." aria-label="Anything..." data-sb-validations="required,text" /></div> -->
-                        <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Submit </button></div>
-                    </div>
-                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">Text is required.</div>
-                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center mb-3 mt-2 text-white">
-                            <div class="fw-bolder">Form submission successful!</div>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                </form>
+               <form id="contactForm">
+                   <p >
+                       <label class="col-lg-12 text-white " > Email </label>
+                       <input class="col-lg-12" type= "text" name= "mail" id="mail" placeholder="Optional">
+                   </p>
+                   <p>
+                       <label class="col-lg-12 text-white" >  Opinion </label>
+                       <textarea  class="col-lg-12" name= "message" rows="5" id="message" placeholder="Anything..." ></textarea>
+                   </p>
+                   <button type="submit">
+                       Submit
+                   </button>
 
+               </form>
+                </div>
                 <!--<form class="form-text" id="textForm" data-sb-form-api-token="API_TOKEN">
                       </form>-->
             </div>
@@ -250,11 +235,11 @@
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 
-<script src="js/index.js"></script>
+<script type="module" src="js/index.js"></script>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<!--<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
 </body>
 </html>
