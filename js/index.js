@@ -23,6 +23,7 @@ import { getDatabase} from 'https://www.gstatic.com/firebasejs/9.6.3/firebase-da
 const firebaseConfig = {
     apiKey: "AIzaSyAygPsxsqHw6JhZffONdaQiDNsOw-h7t80",
     authDomain: "githubws-4d316.firebaseapp.com",
+    databaseURL: "https://githubws-4d316-default-rtdb.firebaseio.com",
     projectId: "githubws-4d316",
     storageBucket: "githubws-4d316.appspot.com",
     messagingSenderId: "29358105382",
@@ -42,10 +43,11 @@ import { ref, set } from 'https://www.gstatic.com/firebasejs/9.6.3/firebase-data
 
 function writeData(mail, message ) {
     const db = getDatabase();
-    set(ref(db, 'users/' + userId), {
-        username: name,
-        email: email,
-        profile_picture : imageUrl
+   // db.push()
+    set(ref(db, 'messages/' + new Date().toString()), {
+        mail: mail,
+        message: message,
+
     });
 }
 
@@ -79,6 +81,7 @@ function submitForm(e)
     var message = getInputVale('message');
     console.log(mail,message);
 
+    writeData(mail,message);
     //saveMessage(mail,message);
 
 
