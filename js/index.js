@@ -86,10 +86,12 @@ function submitForm(e)
         writeData(mail, message);
 
     if( message !== "") {
+        console.log("aaaaaaaaaaa");
         alert("Your feedback is taken");
     }
     else
     {
+        console.log("bbbbbbb");
         alert("Your opinion is empty");
     }
     //saveMessage(mail,message);
