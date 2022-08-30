@@ -81,18 +81,14 @@ function submitForm(e)
 
         var mail = getInputVale('mail');
         var message = getInputVale('message');
-        console.log(mail, message);
-
         writeData(mail, message);
 
     if( message !== "") {
-        console.log("aaaaaaaaaaa");
-        alert("Your feedback is taken");
+        alert("Your feedback taken");
     }
     else
     {
-        console.log("bbbbbbb");
-        alert("Your opinion is empty");
+        alert("Opinion is empty");
     }
     //saveMessage(mail,message);
 
