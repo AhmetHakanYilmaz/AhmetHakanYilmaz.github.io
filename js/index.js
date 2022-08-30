@@ -77,11 +77,21 @@ document.getElementById('contactForm').addEventListener('submit',submitForm);
 function submitForm(e)
 {
     e.preventDefault();
-    var mail = getInputVale('mail');
-    var message = getInputVale('message');
-    console.log(mail,message);
 
-    writeData(mail,message);
+
+        var mail = getInputVale('mail');
+        var message = getInputVale('message');
+        console.log(mail, message);
+
+        writeData(mail, message);
+
+    if( message !== "") {
+        alert("Your feedback is taken");
+    }
+    else
+    {
+        alert("Your opinion is empty");
+    }
     //saveMessage(mail,message);
 
 
