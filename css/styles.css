@@ -8023,17 +8023,17 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #233d4d !important;
 }
 
 .bg-blue {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-blue-rgb),var(--bs-bg-opacity)) !important;
+  background-color: #363636!important;
 }
 
 .bg-darkblue {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-darkblue-rgb),var(--bs-bg-opacity)) !important;
+  background-color: #7d756d !important;
 }
 
 .bg-black {
@@ -11582,7 +11582,7 @@ img {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/backgr2.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../assets/img/savsat.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11623,10 +11623,13 @@ img {
     font-size: 1.25rem;
   }
 }
-
+.backSiyah {
+  padding-top: 10rem;
+  background: #cfdce6;
+}
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(26, 66, 110, 0.9) 75%, rgba(26, 66, 110, 0.8) 100%);
+  background: black;
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11720,4 +11723,20 @@ img {
 
 .contact form button{
   background: #bdd6db;
+}
+
+.text-centering {
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.sonClass {
+  width: calc(100% - 20px);
+  margin: 10px;
 }
