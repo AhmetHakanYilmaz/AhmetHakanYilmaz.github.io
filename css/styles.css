@@ -11748,3 +11748,41 @@ img {
   width: calc(100% );
 
 }
+
+
+.hover-link {
+  position: relative;
+}
+
+.hover-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Ensures the tooltip text appears in a single line */
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+.hover-link:hover::after {
+  opacity: 1;
+}
+
+
+.underline {
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+}
+
+
+.underline2 {
+  border-bottom: 2px solid white;
+  margin-bottom: 5px;
+}
